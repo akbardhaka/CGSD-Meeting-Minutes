@@ -8,13 +8,23 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <div class="container">
-    <img src="images/logo.png" alt="Logo" class="logo">
-    <h1>CGSD Meeting Minutes</h1>
-    <textarea id="meetingDetails" placeholder="Enter meeting notes..."></textarea>
-    <button id="saveBtn">Save DOCX</button>
-    <button id="shareBtn">Share DOCX</button>
+  <div class="app-container">
+    <div class="header">
+      <img src="images/logo.png" alt="CGSD Logo" class="logo">
+      <h1>CGSD Meeting Minutes</h1>
+    </div>
+
+    <div class="content">
+      <label for="meetingDetails">Agenda:</label>
+      <textarea id="meetingDetails" placeholder="Enter meeting notes..."></textarea>
+
+      <div class="button-container">
+        <button id="saveBtn">💾 Save DOCX</button>
+        <button id="shareBtn">📤 Share DOCX</button>
+      </div>
+    </div>
   </div>
+
   <script src="app.js"></script>
 </body>
 </html>
