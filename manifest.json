@@ -1,0 +1,13 @@
+{
+  "name": "CGSD Meeting Minutes",
+  "short_name": "MeetingMinutes",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#e8f0fe",
+  "theme_color": "#4285F4",
+  "icons": [{
+    "src": "images/logo.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }]
+}
