@@ -2,29 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>CGSD Meeting Minutes</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="app-container">
-    <div class="header">
-      <img src="images/logo.png" alt="CGSD Logo" class="logo">
-      <h1>CGSD Meeting Minutes</h1>
-    </div>
+  <div id="app-container">
+    <header>
+      <img src="logo.png" alt="CGSD Logo" class="logo">
+      <h1>Meeting Minutes</h1>
+    </header>
 
-    <div class="content">
-      <label for="meetingDetails">Agenda:</label>
-      <textarea id="meetingDetails" placeholder="Enter meeting notes..."></textarea>
+    <main>
+      <section id="agenda-section">
+        <h2>Agenda</h2>
+        <div id="agenda-list"><!-- agenda items get injected here --></div>
+        <button id="add-agenda-btn">Add Agenda Item</button>
+      </section>
 
-      <div class="button-container">
-        <button id="saveBtn">💾 Save DOCX</button>
-        <button id="shareBtn">📤 Share DOCX</button>
-      </div>
-    </div>
+      <section id="conclusion-section">
+        <h2>Conclusion</h2>
+        <p id="conclusion-text">[Your conclusion here]</p>
+      </section>
+    </main>
   </div>
 
-  <script src="app.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
